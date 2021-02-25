@@ -1,0 +1,175 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pink {
+    text-decoration: none;
+    color: #fe4141;
+}
+
+
+body {
+    line-height: 1.15;
+    background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url(https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+body {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 1.5em;
+}
+
+.card-movie {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    width: 375px; /* ОЦЕНИТЬ!!! */
+    background-color: #1f1826;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 115px -14px black;
+}
+
+
+.movie-img {
+    height: 380px; /* ОЦЕНИТЬ!!! */
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(0.35, black), color-stop(0.5, black), color-stop(0.65, black), color-stop(0.85, rgba(0, 0, 0, 0.6)), color-stop(1, transparent));
+}
+
+.container-movie { /* ОЦЕНИТЬ!!! */
+    padding: 0 1em;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    color: #e7e7e7;
+}
+
+.name {
+    text-align: justify;
+    font-size: 2.25em;
+}
+
+.list-details, .desc-movie, .list-actors {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75em;
+}
+
+.about {
+    flex: 1 1 auto;
+}
+
+.list-details {
+    font-size: 0;
+    color: #818181;
+}
+
+.item-details {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.item-details:not(:last-child)::after { /* ОЦЕНИТЬ!!! */
+    content: '/';
+    margin-right: 0.25em;
+}
+
+.summary {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.list-smiles {
+    font-size: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-smiles > li {
+    font-size: 0.75rem;
+    color: #fe4141;
+    display: flex;
+    align-items: flex-end;
+}
+
+.list-smiles > li, .list-smiles > li > a {
+    margin-right: 0.3rem;
+}
+
+.desc-movie {
+    color: #9b9b9b;
+    text-align: justify;
+    margin-top: 1em;
+}
+
+.list-actors {
+    margin-top: 0.5rem;
+    font-size: 0;
+    font-weight: 300;
+    color: #e7e7e7;
+
+}
+
+.item-actors {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+
+.item-actors:not(:last-child)::after { /* ОЦЕНИТЬ!!! */
+    content: ',';
+    margin-right: 0.25em;
+}
+
+.row-space-between {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.btn-trailer { /* последовательность h5 - h3 */
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #fe4141;
+    border-radius: 5px;
+    padding: 0.15em 0.6em;
+}
+
+footer {
+    margin-top: 24px;
+    padding-bottom: 20px;
+}
+
+.btn-trailer > i {
+    margin-right: 1em;
+    font-size: 0.45em;
+}
+
+.btn-trailer > h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-size: 1.5em;
+}
